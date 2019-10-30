@@ -1,0 +1,44 @@
+mixin header(data)
+  header.header
+    .header__container.container
+      .header__top
+        .header__email.email
+          a.email__val(href="mailto:") info@pro-dvigeniye.ru
+          .email__text по любым вопросам 
+            span Работаем по России и СНГ
+            
+        .header__phone.phone
+          a.phone__val(href="tel:") 8-800-2017519
+          .phone__time пн-пт 10:00-19:00 МСК
+
+      .header__body
+
+        a.header__logo.logo(href="#")
+          .logo__icon 
+            img(src='assets/images/general/logo-icon.png', alt="ПроДвижение — агентство интернет маркетинга")
+          .logo__w
+            .logo__brand ПроДвижение
+            .logo__slogan Агентство интернет маркетинга
+
+        nav.header__nav.nav
+          button.nav__trigger
+            != pugHelpers.Icon.call(locals, {iconName: 'menu', className: 'nav__trigger-icon', iconWidth: '36', iconHeight: '39'})
+
+          .nav__list-w
+            ul.nav__list
+              li.nav__item.nav__item_active
+                a.nav__link(href="#") Главная
+              li.nav__item
+                a.nav__link(href="#") О компании
+              li.nav__item
+                a.nav__link(href="#") Создание сайтов
+              li.nav__item
+                a.nav__link(href="#") Контекстная реклама
+              li.nav__item
+                a.nav__link(href="#") Таргетированная реклама
+              li.nav__item
+                a.nav__link(href="#") Контакты
+
+                       
+        
+
